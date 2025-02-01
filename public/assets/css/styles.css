@@ -19,7 +19,7 @@ body {
 }
 
 .green {
-    color: green;
+    color: green !important;
 }
 
 menu {
