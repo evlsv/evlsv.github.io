@@ -1,0 +1,3 @@
+- [github pages](https://pages.github.com/)
+- [font-awesome](https://cdnjs.com/libraries/font-awesome)
+- [fonts.google](https://fonts.google.com/)
