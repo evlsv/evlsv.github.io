@@ -5,41 +5,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PaintPro</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #254100;
+            --secondary-color: #f4f4f4;
+            --social-link-size: 1.7rem;
+        }
+
+        #contacts-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #254100;
+            color: #fff;
+            padding: .2rem .8rem;
+        }
+
+        #contacts-bar ul {
+            margin: 0;
+            padding: .8rem;
+            list-style-type: none;
+        }
+
+        #contacts-bar li {
+            display: inline-block;
+        }
+
+        #contacts-bar #contacts li {
+            padding: 0 .5rem;
+        }
+
+        #contacts-bar li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #social-links li a {
+            display: inline-block;
+            background-color: rgb(190, 184, 0);
+            border-radius: 50px;
+            width: var(--social-link-size);
+            height: var(--social-link-size);
+            text-align: center;
+            line-height: var(--social-link-size);
+        }
+
+        #logo img {
+            float: left;
+            height: 50px;
+            margin: .2rem .5rem .2rem 2rem;
+        }
+
+        #top-bar h1 {
+            float: left;
+            font-size: 1.7rem;
+        }
+
+        #top-bar::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        nav {
+            float: right;
+            padding: .2rem 1.3rem;
+        }
+
+        nav li {
+            display: inline-block;
+        }
+
+        nav li a {
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 0 .5rem;
+            color: rgb(76, 76, 76);
+        }
+
+        .active a {
+            color: rgb(163, 133, 0);
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <section id="contacts-bar">
             <ul id="contacts">
-                <li><a href="tel:+1234567890">+012 345 6789</a></li>
-                <li><a href="mailto:info@paintpro.com">info@paintpro.com</a></li>
+                <li><a href="tel:+1234567890"><i class="fa-solid fa-phone-flip"></i> +012 345 6789</a></li>
+                <li><a href="mailto:info@paintpro.com"><i class="fa-solid fa-envelope-open"></i> info@paintpro.com</a>
+                </li>
             </ul>
             <ul id="social-links">
-                <li><a href="#!">Facebook</a></li>
-                <li><a href="#!">Twitter</a></li>
-                <li><a href="#!">Instagram</a></li>
-                <li><a href="#!">LinkedIn</a></li>
+                <li><a href="#!"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#!"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="#!"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#!"><i class="fa-brands fa-linkedin-in"></i></a></li>
             </ul>
         </section>
-        <nav>
-            <ul>
-                <li><a href="#!">Home</a></li>
-                <li><a href="#!">About</a></li>
-                <li><a href="#!">Service</a></li>
-                <li><a href="#!">Project</a></li>
-                <li><a href="#!">Pages</a></li>
-                <li><a href="#!">Contact</a></li>
-            </ul>
-        </nav>
+        <section id="top-bar">
+            <picture id="logo">
+                <source srcset="assets/img/painpro-logo.webp" type="image/webp">
+                <img src="assets/img/painpro-logo.png" alt="PaintPro">
+            </picture>
+            <h1>PaintPro</h1>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#!">Home</a></li>
+                    <li><a href="#!">About</a></li>
+                    <li><a href="#!">Service</a></li>
+                    <li><a href="#!">Project</a></li>
+                    <li><a href="#!">Pages</a></li>
+                    <li><a href="#!">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
     </header>
     <main>
         <section>
-                <h1>PaintPro</h1>
-                <h2>Bring Life to Your Walls with Colors!</h2>
-                <p>Revitalize your walls with our professional painting services. We're here to breathe new life into your home or
-                    workplace.</p>
+            <h2>Bring Life to Your Walls with Colors!</h2>
+            <p>Revitalize your walls with our professional painting services. We're here to breathe new life into your
+                home or
+                workplace.</p>
         </section>
     </main>
 
 </body>
+
 </html>
